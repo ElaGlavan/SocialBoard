@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="UserListCollectionViewCell" reuseIdentifier="UserListCollectionViewCell" id="VOa-BA-SLD" customClass="UserListCollectionViewCell" customModule="SocialBoard" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="154" height="186"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="2QB-mH-tnR">
+                <rect key="frame" x="0.0" y="0.0" width="154" height="186"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oo0-h2-OsV">
+                        <rect key="frame" x="0.0" y="0.0" width="154" height="151"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="154" id="7Aw-pP-8rk"/>
+                            <constraint firstAttribute="height" constant="151" id="DPU-m5-81P"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="151" id="HIv-ZT-Epb"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="154" id="j7S-JJ-WUW"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHn-IT-S9M">
+                        <rect key="frame" x="0.0" y="151" width="26.5" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="o94-MY-IvG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="uWQ-SW-WTs" userLabel="spinner">
+                        <rect key="frame" x="65" y="65" width="20" height="20"/>
+                    </activityIndicatorView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uWQ-SW-WTs" firstAttribute="top" secondItem="2QB-mH-tnR" secondAttribute="top" constant="65" id="6B8-GR-zMB"/>
+                    <constraint firstAttribute="trailing" secondItem="oo0-h2-OsV" secondAttribute="trailing" id="RVC-lg-dgG"/>
+                    <constraint firstItem="oo0-h2-OsV" firstAttribute="leading" secondItem="2QB-mH-tnR" secondAttribute="leading" id="Sj2-K8-Yjd"/>
+                    <constraint firstAttribute="bottom" secondItem="jHn-IT-S9M" secondAttribute="bottom" id="TYS-ae-w8D"/>
+                    <constraint firstItem="jHn-IT-S9M" firstAttribute="leading" secondItem="2QB-mH-tnR" secondAttribute="leading" id="UOW-ec-Hdt"/>
+                    <constraint firstAttribute="trailing" secondItem="jHn-IT-S9M" secondAttribute="trailing" id="Yyi-JU-wty"/>
+                    <constraint firstItem="jHn-IT-S9M" firstAttribute="top" secondItem="oo0-h2-OsV" secondAttribute="bottom" id="i9s-9y-Vs0"/>
+                    <constraint firstItem="oo0-h2-OsV" firstAttribute="top" secondItem="2QB-mH-tnR" secondAttribute="top" id="iFa-hh-jAQ"/>
+                    <constraint firstItem="oo0-h2-OsV" firstAttribute="top" secondItem="2QB-mH-tnR" secondAttribute="top" id="mtp-1i-0rx"/>
+                    <constraint firstItem="uWQ-SW-WTs" firstAttribute="leading" secondItem="2QB-mH-tnR" secondAttribute="leading" constant="65" id="pRc-1m-UVx"/>
+                    <constraint firstAttribute="trailing" secondItem="oo0-h2-OsV" secondAttribute="trailing" constant="20" symbolic="YES" id="qbh-K0-qcm"/>
+                    <constraint firstItem="oo0-h2-OsV" firstAttribute="leading" secondItem="2QB-mH-tnR" secondAttribute="leading" id="tOh-Gu-KFq"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="154" height="186"/>
+            <connections>
+                <outlet property="spinner" destination="uWQ-SW-WTs" id="eQe-d4-6bq"/>
+                <outlet property="userName" destination="jHn-IT-S9M" id="16X-cF-HO4"/>
+                <outlet property="userPhoto" destination="oo0-h2-OsV" id="txB-BE-QZV"/>
+            </connections>
+            <point key="canvasLocation" x="-81.159420289855078" y="79.6875"/>
+        </collectionViewCell>
+    </objects>
+</document>
